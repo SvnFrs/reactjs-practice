@@ -11,16 +11,6 @@ import {
 import DishDetail from "./DiskdetailComponent";
 
 class Menu extends Component {
-  // constructor(props) {
-  //   super(props);
-  //   this.state = {
-  //     selectedDish: null,
-  //   }
-  // }
-  // onDishSelect(dish) {
-  //   this.setState({ selectedDish: dish });
-  // }
-
   render() {
     const menu = this.props.dishes.map((dish) => {
       return (
@@ -40,7 +30,6 @@ class Menu extends Component {
     return (
       <div className="container">
         <div className="row">{menu}</div>
-        {/* <DishDetail selectedDish={this.state.selectedDish}/> */}
       </div>
     );
   }
